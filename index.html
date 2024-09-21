@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="/assets/profile-pic.png" alt="Abhishek" class="profile-photo">
+            <h1>Abhishek Singh</h1>
+        </div>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-sun"></i>
+        </button>
+        <button id="menu-toggle" class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <aside id="side-nav" class="side-nav">
+        <button id="close-nav" class="close-nav">&times;</button>
+        <nav>
+            <ul>
+                <li><a href="#about" onclick="closeNav()">About Me</a></li>
+                <li><a href="#education" onclick="closeNav()">Education</a></li>
+                <li><a href="#skills" onclick="closeNav()">Skills</a></li>
+                <li><a href="#experience" onclick="closeNav()">Experience</a></li>
+                <li><a href="#contact" onclick="closeNav()">Contact Me</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm a software engineer with a passion for building web applications and learning new technologies. I have experience in various programming languages and frameworks. In my free time, I enjoy contributing to open source projects and exploring new tech trends.</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>B.Tech in Computer Science Engineering</li>
+                <li>Guru Gobind Singh Indraprastha University (2019 - 2023)</li>
+                
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-box">Java</div>
+                <div class="skill-box">Spring</div>
+                <div class="skill-box">SpringBoot</div>
+                <div class="skill-box">Microservices</div>
+                <div class="skill-box">SQL</div>
+                <div class="skill-box">AWS</div>
+                <div class="skill-box">JavaScript</div>
+                <div class="skill-box">HTML & CSS</div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li>Packaged App Development Associate at Accenture (April 2024 - Present)</li>
+                <li>Intern at Cognizant (Dec 2023 - Feb 2023)</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="social-media">
+                <a href="https://www.instagram.com/abhishekcoder7_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/abhishekcoder7" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/abhishekcoder7/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </section>
+        <p>Dummy</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
